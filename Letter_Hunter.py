@@ -36,6 +36,9 @@ def guessBegin(word):
 
     solution_key = "".join(hidden)
     print("The word is: "+Fore.YELLOW+solution_key)
+    if "-" not in hidden:
+        print(Fore.GREEN + "Congratulations!")
+
 
 def playAgain():
     while True:
